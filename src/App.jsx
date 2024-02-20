@@ -5,6 +5,7 @@ import "@/App.css";
 import useZuStore from "@store/store.js";
 import { useQuery } from "@tanstack/react-query";
 import { fetchPerson } from "@api/swapi.js";
+import { Link } from "react-router-dom";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -46,6 +47,13 @@ function App() {
 				</a>
 			</div>
 			<h1>Vite + React</h1>
+			<div>
+				<Link to='/page1'>Go to Page 1</Link>
+				<br />
+				<Link to='/page2'>Go to Page 2</Link>
+				<br />
+				<Link to='/'>Root</Link>
+			</div>
 			<div className='card'>
 				<button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
 				<p>
