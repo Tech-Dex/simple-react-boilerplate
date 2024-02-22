@@ -1,0 +1,19 @@
+[data-scope="date-picker"][data-part="table-row"] {
+    display: flex;
+    justify-content: space-between;
+}
+
+[data-scope="date-picker"][data-part="table-cell-trigger"]{
+    background-color: orangered;
+}
+
+
+[data-scope="date-picker"][data-part="table-cell-trigger"][data-in-range]{
+    background-color: blue;
+}
+
+[data-scope="date-picker"][data-part="view-trigger"]{
+    background-color: green;
+}
+
+

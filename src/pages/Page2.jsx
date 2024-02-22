@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { CustomSlider } from "@components/CustomSlider/CustomSlider.jsx";
+import { CustomDatePicker } from "@components/CustomDatePicker/CustomDatePicker.jsx";
 
 function Page2() {
 	return (
@@ -9,6 +11,11 @@ function Page2() {
 			<Link to='/page2'>Go to Page 2</Link>
 			<br />
 			<Link to='/'>Root</Link>
+			<br />
+			<CustomSlider />
+			<br />
+			<br />
+			<CustomDatePicker />
 		</div>
 	);
 }
